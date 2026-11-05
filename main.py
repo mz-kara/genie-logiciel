@@ -1,5 +1,6 @@
-from logger import info
+from logger import Logger
 
 if __name__ == "__main__":
-  info("Message à caractère informatif")
-  info("un autre message")
+    logger = Logger()
+    logger.info("Message à caractère informatif")
+    logger.info("un autre message")
