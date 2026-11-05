@@ -1,6 +1,7 @@
-from logger import Logger
+from logger import Logger, FileWriter
 
 if __name__ == "__main__":
-    logger = Logger()
-    logger.info("Message à caractère informatif")
-    logger.info("un autre message")
+    logger = FileWriter()
+
+    logger.write("Message à caractère informatif")
+    logger.write("un autre message")
